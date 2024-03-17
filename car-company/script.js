@@ -140,7 +140,6 @@ document.getElementById('transport__get').addEventListener('click', function(eve
   event.preventDefault();
   if(event.target.nextElementSibling.className === 'active') {
     removeItem('transport__items');
-    console.log(document.getElementById('transport__items'))
   } else {
     transportObjs.forEach(item => drawItem.call(item, 'transport__items'));
   }
