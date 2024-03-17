@@ -118,6 +118,10 @@ function drawItem(id) {
   this.brandPara.innerText = this.brand;
   this.itembox.append(this.brandPara);
 
+  this.pricePara = document.createElement('p');
+  this.pricePara.innerText = this.price;
+  this.itembox.append(this.pricePara);
+
   this.container.append(this.itembox);
 }
 
